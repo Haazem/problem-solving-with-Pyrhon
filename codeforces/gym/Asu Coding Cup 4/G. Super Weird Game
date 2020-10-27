@@ -1,0 +1,40 @@
+#G. Super Weird Game
+
+
+n , k = map(int,input().split())
+ 
+l1 = list(map(int,input().split()))
+l2 = list(map(int,input().split()))
+ 
+cnt1 = 0
+cnt2 = 0
+ 
+freq1 = [0] * (10**5+9)
+freq2 = [0] * (10**5+9)
+ 
+for i in range(n):
+    if l1[i] > k :
+        continue
+ 
+    else:
+        freq1[l1[i]] +=1
+        cnt1 += freq1[k - l1[i]]
+ 
+for i in range(n):
+    if l2[i] > k:
+        continue
+ 
+    else:
+        freq2[l2[i]] +=1
+        cnt2 += freq2[k - l2[i]]
+ 
+ 
+if cnt1 > cnt2 :
+    print('Mahmoud')
+ 
+elif cnt2 > cnt1 :
+    print('BASHAR')
+ 
+else:
+    print('Draw')
+ 
