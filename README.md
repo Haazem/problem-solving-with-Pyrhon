@@ -1,4 +1,4 @@
-# competitive-programming-and-problem-solving
+# competitive-programming-and-problem-solving with Python
 
 My some solutions codes on  (Codeforces - Hackerrank - Hackerrarth - Edabit - UVA )
 
