@@ -1,0 +1,40 @@
+#D. Bashar and the bad land (Easy)
+
+
+ 
+ 
+from collections import deque
+ 
+n , x = map(int,input().split())
+l = list(map(int,input().split()))
+ 
+if sum(l) < x :
+    print('-1')
+    exit(0)
+ 
+for i in l :
+    if i == x :
+        print('1')
+        exit(0)
+ 
+l2 = list(reversed(l))
+d = deque()
+ 
+for i in range(n):
+    sm = l[i]
+    cnt = 1
+    for j in range(i + 1 , n ):
+        if sm < x :
+            sm += l[j]
+            cnt +=1
+    if sm >= x :
+        d.append(cnt)
+    #print(sm)
+ 
+if len(d) > 0 :
+    print(min(d))
+else:
+    print('-1')
+ 
+ 
+
