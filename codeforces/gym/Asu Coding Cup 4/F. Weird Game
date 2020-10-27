@@ -1,0 +1,14 @@
+###F. Weird Game
+
+
+n = int(input())
+ 
+if n == 1 :
+    print('Bashar')
+    exit(0)
+ 
+if n % 2 == 0 :
+    print('Mahmoud')
+ 
+else:
+    print('Bashar')
