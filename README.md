@@ -1,6 +1,6 @@
 # competitive-programming-and-problem-solving with Python
 
-My some solutions codes on  (Codeforces - Hackerrank - Hackerrarth - Edabit - UVA )
+My some solutions codes on  (Codeforces - Hackerrank - Hackerrarth -  UVA )
 
 Solved Around 1000 Problems on several online judges.
 
