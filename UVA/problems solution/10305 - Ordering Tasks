@@ -1,1 +1,46 @@
 
+#10305 - Ordering Tasks problem solution with python
+
+
+
+
+
+from collections import defaultdict
+
+def dfs(node , visited , res):
+
+    visited[node] = True
+    for j in g[node]:
+        if not visited[j]:
+            dfs(j , visited , res)
+
+    res.insert(0 , node)
+
+def solve2():
+
+    res = []
+    visited = [False] * (n+1)
+    for i in range(1 , n + 1):
+        if not  visited[i]:
+            dfs(i , visited , res)
+
+    return res
+
+
+while True:
+    n , m = map(int,input().split())
+    if n == m == 0 :
+        break
+    g = defaultdict(list)
+
+    for i in range(m):
+        u , v = map(int,input().split())
+        g[u].append(v)
+
+
+    ans = solve2()
+    print(*ans)
+
+
+
+
