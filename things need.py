@@ -1,12 +1,30 @@
 #########################################################################3
 
-from itertools import permutations
 def STR(): return list(input())
 def INT(): return int(input())
 def MAP(): return map(int, input().split())
+def MAP2():return map(float,input().split())
 def LIST(): return list(map(int, input().split()))
 def STRING(): return input()
+import string
+import sys
+import datetime
+from heapq import heappop , heappush
+from bisect import *
+from collections import deque , Counter , defaultdict
+from math import *
+from itertools import permutations , accumulate
+dx = [-1 , 1 , 0 , 0  ]
+dy = [0 , 0  , 1  , - 1]
+#visited = [[False for i in range(m)] for j in range(n)]
+#  primes = [2,11,101,1009,10007,100003,1000003,10000019,102345689]
+#months = [31 , 28 , 31 , 30 , 31 , 30 , 31 , 31 , 30 , 31, 30 , 31]
+#sys.stdin = open(r'input.txt' , 'r')
+#sys.stdout = open(r'output.txt' , 'w')
+#for tt in range(INT()):
+#arr.sort(key=lambda x: (-d[x], x)) Sort with Freq
 
+#code
 
 #find number of digits
 #x = 12345
